@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Styles/MainPage/css/MainPage.css" />
+    <script src="Styles/MainPage/js/Mainpage.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div id="leftHeaderSide">
+            <div class="Carte">
+                <span><a href="routeur.php?objet=pizza&action=displayAll"></a></span>
+            </div>
+            <div class="Telephone">
+                <div id="overlay">
+                    <p id="numeroOverlay">01.12.13.14.15</p>
+                </div>
+                <script src="https://cdn.lordicon.com/lordicon.js"></script>
+                <lord-icon src="https://cdn.lordicon.com/srsgifqc.json" trigger="hover" colors="primary:#000000" style="width:50px;height:50px" onmouseover="showOverlay()" onmouseout="hideOverlay()">
+                </lord-icon>
+            </div>
+        </div>
+        <div class="containerLogo">
+            <img id="logo" src="Styles/MainPage/Assets/MainpageImages/alimeo_pizza.png">
+        </div>
+        <div class="Inscrire_se_Co">
+            <img id="Inscription" src="Styles/MainPage/Assets/MainpageImages/personne.png">
+            <span class="InscriptionOrConnect"><a href="#"></a></span>
+        </div>
+
+    </header>
+    <main>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <model-viewer src="Styles/MainPage/Assets/MainpageImages/pizza.glb"  auto-rotate shadow-intensity="1"></model-viewer>
+
+    </main>
+</body>
+
+</html>
